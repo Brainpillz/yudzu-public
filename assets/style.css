@@ -1,0 +1,26 @@
+
+:root { color-scheme: dark; --bg:#0d0f14; --panel:#151923; --text:#edf1ff; --muted:#9aa4bd; --line:#283044; --accent:#c8ff4d; --accent2:#9b7cff; }
+* { box-sizing: border-box; }
+body { margin:0; background: radial-gradient(circle at top left, #20263a 0, #0d0f14 45%); color:var(--text); font: 16px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.topbar { display:flex; gap:18px; align-items:baseline; padding:22px clamp(18px,4vw,56px); border-bottom:1px solid var(--line); background:rgba(13,15,20,.82); backdrop-filter: blur(14px); position:sticky; top:0; z-index:10; }
+.brand { font-weight:800; letter-spacing:.02em; color:var(--text); }
+.tagline { color:var(--muted); font-size:.92rem; }
+.shell { display:grid; grid-template-columns: 280px minmax(0, 860px); gap:34px; padding:34px clamp(18px,4vw,56px); }
+.nav { background:rgba(21,25,35,.72); border:1px solid var(--line); border-radius:22px; padding:18px; height:max-content; position:sticky; top:92px; }
+.nav-title { color:var(--muted); text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; margin-bottom:12px; }
+.nav a { display:block; padding:9px 0; border-top:1px solid rgba(255,255,255,.05); color:#dfe6ff; }
+.content { background:rgba(21,25,35,.82); border:1px solid var(--line); border-radius:28px; padding: clamp(24px,4vw,54px); box-shadow: 0 24px 80px rgba(0,0,0,.28); }
+h1 { font-size: clamp(2.1rem, 6vw, 4.8rem); line-height:.98; letter-spacing:-.06em; margin:0 0 24px; }
+h2 { margin-top:2.2em; font-size:1.55rem; color:#ffffff; }
+h3 { margin-top:1.8em; color:#dce3ff; }
+p, li { color:#d9def0; }
+code { background:#0b0d12; border:1px solid var(--line); border-radius:7px; padding:.13em .38em; }
+pre { overflow:auto; padding:18px; border-radius:16px; background:#090b10; border:1px solid var(--line); }
+.source-path { color:var(--muted); font-size:.86rem; margin-top:0; }
+.missing-link { color:#ffb86b; border-bottom:1px dotted #ffb86b; }
+.index-list { list-style:none; padding:0; display:grid; gap:12px; }
+.index-list li { padding:14px 16px; background:#10141d; border:1px solid var(--line); border-radius:14px; }
+.index-list span { display:block; color:var(--muted); font-size:.85rem; }
+@media (max-width: 860px) { .shell { grid-template-columns: 1fr; } .nav { position: static; } .topbar { display:block; } }
