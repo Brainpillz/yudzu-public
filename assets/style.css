@@ -7,7 +7,9 @@ a:hover { text-decoration: underline; }
 .topbar { display:flex; gap:18px; align-items:baseline; padding:22px clamp(18px,4vw,56px); border-bottom:1px solid var(--line); background:rgba(13,15,20,.82); backdrop-filter: blur(14px); position:sticky; top:0; z-index:10; }
 .brand { font-weight:800; letter-spacing:.02em; color:var(--text); }
 .tagline { color:var(--muted); font-size:.92rem; }
-.shell { display:grid; grid-template-columns: 280px minmax(0, 860px); gap:34px; padding:34px clamp(18px,4vw,56px); }
+.shell { display:grid; gap:34px; padding:34px clamp(18px,4vw,56px); }
+.shell.with-nav { grid-template-columns: 280px minmax(0, 860px); }
+.shell.single-page { grid-template-columns: minmax(0, 920px); justify-content:center; }
 .nav { background:rgba(21,25,35,.72); border:1px solid var(--line); border-radius:22px; padding:18px; height:max-content; position:sticky; top:92px; }
 .nav-title { color:var(--muted); text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; margin-bottom:12px; }
 .nav a { display:block; padding:9px 0; border-top:1px solid rgba(255,255,255,.05); color:#dfe6ff; }
